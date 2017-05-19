@@ -1,5 +1,6 @@
 <div class="col-md-4 col-md-offset-4">
   <div class="group">
+    <%= link_to("Write a Post(写篇文章)", new_group_post_path(@group), class: "btn btn-default pull-right")%>
     <% if current_user && current_user == @group.user %>
       <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right") %>
     <% end %>
