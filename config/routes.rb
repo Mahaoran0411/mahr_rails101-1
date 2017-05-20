@@ -6,4 +6,7 @@ Rails.application.routes.draw do
     resources :group_members, only: [:create, :destroy]
   end
   root 'groups#index'
+  namespace :account do
+    resources :groups
+  end
 end
